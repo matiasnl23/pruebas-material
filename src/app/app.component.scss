@@ -1,0 +1,27 @@
+@import "../breakpoints.scss";
+
+.container {
+  height: calc(100vh - 64px);
+
+  @media #{$mat-xs} {
+    height: calc(100vh - 56px);
+  }
+
+  mat-sidenav {
+    max-width: 200px;
+    width: 20%;
+
+    @media #{$mat-xs} {
+      width: 50%;
+    }
+  }
+}
+
+mat-toolbar {
+  position: sticky;
+  display: flex;
+
+  .space {
+    flex: 1 1 auto;
+  }
+}
